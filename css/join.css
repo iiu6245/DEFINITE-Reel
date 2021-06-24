@@ -1,0 +1,78 @@
+@charset 'utf-8';
+
+#joinPage .joinTop {
+    background-image:url(../img/main_03.jpg);
+    background-position:center bottom;
+    background-size:cover;  /*배경이미지가 큰해상도이미지 모니터에서도 딱 맞춰지게 됨*/
+    padding:100px 0;
+    color:#fff;
+    font-size:36px;
+    text-align:center;
+    text-shadow: 0 1px rgb(0, 0, 0, 0.2)
+}
+.joinBox h3 {
+    text-align: center;
+    font-size:20px;
+    font-weight: 500;
+    color:rgb(72, 142, 223);
+    margin: 50px 0 0px 0;
+}
+.joinBox .info{
+    text-align: center;
+    font-size: 13px;
+    color:#999;
+    margin: 5px 0 40px 0;
+}
+.joinWrap legend { display:block; font-size:20px; font-weight:600; padding:30px 0 20px}
+.joinWrap table { font-size:13px;
+color:#777; 
+}
+.joinWrap th,
+.joinWrap td {border:1px solid #ccc; padding:10px; text-align:left}
+.joinWrap col:nth-child(1) {width:125px}
+.joinWrap col:nth-child(2) {width:auto}
+.joinWrap input[type="text"],
+.joinWrap input[type="password"]
+  { border:1px solid #555;
+    border-radius:3px;
+    width:150px;
+    height:25px;
+    text-indent:0.5em;
+}
+.joinWrap #pid + button {
+    background-color:rgb(77, 121, 204); color:#fff;
+    font-size:10px;
+    padding:5px 8px;
+    border-radius:3px;
+}
+.joinWrap #emcom {
+    width:150px;
+    height:25px;
+    border: 1px solid #555;
+    border-radius:3px;
+}
+.joinWrap input[type="radio"] + label {margin-right:10px}
+.joinWrap input[type="radio"],
+.joinWrap input[type="radio"] + label {vertical-align:middle}
+
+.joinWrap input[type="checkbox"] + label {margin-right:10px}
+.joinWrap input[type="checkbox"],
+.joinWrap input[type="checkbox"] + label {vertical-align:middle}
+
+.joinWrap #memo {
+    width:300px; height:100px;
+    border:1px solid #555;
+    border-radius:3px;
+    padding:0.5em
+}
+.joinWrap .btn { padding:30px 0 100px;
+  text-align:center
+}
+.joinWrap .btn button {
+    width:100px; height:30px;
+    background:#4c4c4c; color:rgb(155, 154, 154);
+    border-radius:5px;
+}
+.joinWrap .btn button[type='reset'] {
+    background:#7f7f7f;
+}
