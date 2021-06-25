@@ -352,7 +352,9 @@ opacity:0.5
 margin-bottom:30px}
 
 /* senction4 */
-.section4{border-bottom: 1px solid #eee; overflow:hidden}
+.section4{border-bottom: 1px solid #eee; 
+    /* overflow:hidden */
+}
 .section4 > div {float:left; width:50%; height:300px}
 .section4 > .text {position:relative; padding:30px}
 .section4 > .text p{color:#666}
@@ -363,23 +365,24 @@ margin-bottom:30px}
 .section4 .text2 h4 {font-weight: 600; }
 .section4 .text3 h3 {padding:10px 0;font-weight: 600;}
 .section4 .text3 .tabmenu {
-    overflow:hidden;
+    /* overflow:hidden; */
     border-bottom:1px solid #ddd ;
-   
 }
 .section4 .tabmenu li { 
-        margin-bottom:-2px; 
         float:left;
         padding:10px 20px; 
         cursor:pointer;
 }
-.section4 .tabmenu li:nth-child(4){color:#fff}
 .section4 .tabmenu .active {
-    border:1px solid #ddd;
-    border-bottom:2px solid #fff; 
-    border-radius:3px;
+    border:1px solid #ddd; border-bottom:none;
+    border-radius:3px 3px 0 0;
+    position:relative;
     /* 이부분(menu one) bottom선 없애는 것 질문드려요 */
 } 
+.section4 .tabmenu .active::after{
+    content:'';position:absolute; top:100%; left:0px; right:0px;
+    height:2px; background-color:#fff;
+}
 
 /* section5*/
 .section5 {
